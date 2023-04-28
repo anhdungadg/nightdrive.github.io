@@ -89,7 +89,7 @@ button:focus {
 
 a,
 a:hover {
-    color: #03ac89;
+    color: #ff8300;
     text-decoration: none;
 }
 
@@ -98,12 +98,12 @@ a:hover {
 
 ::selection {
     color: #000;
-    background: #00ffcc;
+    background: #ff8300;
 }
 
 ::-moz-selection {
     color: #000;
-    background: #00ffcc;
+    background: #ff8300;
 }
 
 
@@ -215,11 +215,11 @@ ul.colors li #color4 {
 }
 
 ul.colors li #color5 {
-    background: #0FCCE8;
+    background: #ff8300CE8;
 }
 
 ul.colors li #style {
-    background: #00ffcc;
+    background: #ff8300;
 }
 
 ul.colors li p {
@@ -554,7 +554,7 @@ body,
     padding: 10px;
     background: #000;
     cursor: pointer;
-    border: 1px solid #00ffcc;
+    border: 1px solid #ff8300;
 }
 
 .rock_menu_toggle i {
@@ -603,10 +603,10 @@ body,
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    background: -webkit-radial-gradient(50% 50%, ellipse closest-side, #00ffcc, rgba(0, 0, 255, 0) 100%);
-    background: -moz-radial-gradient(50% 8%, ellipse closest-side, #00ffcc, rgba(0, 0, 255, 0) 100%);
-    background: -ms-radial-gradient(50% 8%, ellipse closest-side, #00ffcc, rgba(0, 0, 255, 0) 100%);
-    background: -o-radial-gradient(50% 8%, ellipse closest-side, #00ffcc, rgba(0, 0, 255, 0) 100%);
+    background: -webkit-radial-gradient(50% 50%, ellipse closest-side, #ff8300, rgba(0, 0, 255, 0) 100%);
+    background: -moz-radial-gradient(50% 8%, ellipse closest-side, #ff8300, rgba(0, 0, 255, 0) 100%);
+    background: -ms-radial-gradient(50% 8%, ellipse closest-side, #ff8300, rgba(0, 0, 255, 0) 100%);
+    background: -o-radial-gradient(50% 8%, ellipse closest-side, #ff8300, rgba(0, 0, 255, 0) 100%);
 }
 
 .rock_menu ul li a:hover:after {
@@ -657,7 +657,7 @@ body,
     top: -1px;
     margin-left: 0px;
     display: none !important;
-    border-right: 2px solid #00ffcc;
+    border-right: 2px solid #ff8300;
 }
 
 .rock_menu ul li ul li:hover>ul {
@@ -690,7 +690,7 @@ body,
     top: 58px;
     left: 50%;
     margin-left: -50px;
-    border-bottom: 1px solid #00ffcc;
+    border-bottom: 1px solid #ff8300;
     width: 100px;
     height: 1px;
     text-align: center;
@@ -701,7 +701,7 @@ body,
     bottom: 0;
     left: 50%;
     width: 20px;
-    color: #00ffcc;
+    color: #ff8300;
     margin-left: -10px;
     font-size: 30px;
     text-transform: uppercase;
@@ -751,12 +751,12 @@ body,
 
 .btn-arrow:active {
     border-color: #17954c !important;
-    color: #00ffcc !important;
+    color: #ff8300 !important;
 }
 
 .btn-arrow:hover {
-    border-color: #00ffcc !important;
-    color: #00ffcc !important;
+    border-color: #ff8300 !important;
+    color: #ff8300 !important;
 }
 
 .btn-arrow:before {
@@ -862,7 +862,7 @@ body,
 }
 
 .rock_social ul li a:hover {
-    background: #00ffcc;
+    background: #ff8300;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -1010,24 +1010,24 @@ body,
 }
 
 .rock_service:hover>.rock_service_icon>svg {
-    fill: #00ffcc;
+    fill: #ff8300;
 }
 
 .rock_service:hover>.rock_service_icon {
-    border-color: #00ffcc;
+    border-color: #ff8300;
 }
 
 .rock_service:hover>.rock_service_read_more {
-    border-bottom: 2px solid #00ffcc;
+    border-bottom: 2px solid #ff8300;
     background: #000;
 }
 
 .rock_service:hover>.rock_service_read_more>a {
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 .rock_service:hover>.rock_service_read_more>a>svg {
-    fill: #00ffcc;
+    fill: #ff8300;
 }
 
 
@@ -1077,15 +1077,15 @@ body,
 }
 
 .rockon_service:hover .rock_service_icon {
-    border-color: #00ffcc;
+    border-color: #ff8300;
 }
 
 .rockon_service:hover .rock_service_icon svg {
-    fill: #00ffcc;
+    fill: #ff8300;
 }
 
 .rockon_service:hover h3 {
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 
@@ -1102,7 +1102,7 @@ body,
 .rock_event .rock_event_tab {
     float: left;
     width: 12%;
-    border-right: 2px solid #00ffcc;
+    border-right: 2px solid #ff8300;
 }
 
 .rock_event .rock_event_tab ul {
@@ -1119,7 +1119,7 @@ body,
 }
 
 .rock_event .rock_event_tab ul li:hover {
-    border-left: 2px solid #00ffcc;
+    border-left: 2px solid #ff8300;
 }
 
 .rock_event .rock_event_tab ul li:last-child {
@@ -1136,7 +1136,7 @@ body,
 }
 
 .rock_event .rock_event_tab ul li:hover a {
-    color: #00ffcc;
+    color: #ff8300;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -1154,7 +1154,7 @@ body,
 }
 
 .rock_event .rock_event_tab ul li a.active p {
-    color: #00ffcc;
+    color: #ff8300;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -1180,7 +1180,7 @@ body,
 }
 
 .rock_event .rock_event_tab ul li a:hover:before {
-    border-left: 10px solid #00ffcc;
+    border-left: 10px solid #ff8300;
     border-bottom: 10px solid transparent;
     border-top: 10px solid transparent;
     top: 50%;
@@ -1197,7 +1197,7 @@ body,
 }
 
 .rock_event .rock_event_tab ul li a.active:before {
-    border-left: 10px solid #00ffcc;
+    border-left: 10px solid #ff8300;
     border-bottom: 10px solid transparent;
     border-top: 10px solid transparent;
     top: 50%;
@@ -1239,14 +1239,14 @@ body,
 }
 
 .rock_event .rock_event_tab_content_main .rock_event_tab_content .rock_event_detail h1 {
-    color: #00ffcc;
+    color: #ff8300;
     font-size: 38px;
     text-transform: uppercase;
 }
 
 .rock_event .rock_event_tab_content_main .rock_event_tab_content .rock_event_detail h4 {
     text-transform: uppercase;
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 
@@ -1300,7 +1300,7 @@ body,
 }
 
 .rock_event_time ul li a:hover {
-    border-left: 2px solid #00ffcc;
+    border-left: 2px solid #ff8300;
     background: #151414;
     z-index: 99;
     -webkit-transition: all 0.2s;
@@ -1407,8 +1407,8 @@ body,
 }
 
 .photo_link a:hover {
-    color: #00ffcc;
-    border-color: #00ffcc;
+    color: #ff8300;
+    border-color: #ff8300;
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -1422,7 +1422,7 @@ body,
 }
 
 .photo_link a:hover i {
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 .rock_club_photo_detail {
@@ -1464,7 +1464,7 @@ body,
 }
 
 .rock_slider_button:hover {
-    border-color: #00ffcc;
+    border-color: #ff8300;
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -1519,7 +1519,7 @@ body,
 }
 
 .rock_audio_player .rock_audio_player_title .track_artist {
-    color: #00ffcc;
+    color: #ff8300;
     font-size: 18px;
 }
 
@@ -1721,8 +1721,8 @@ body,
 }
 
 #rock_track_playlist_slider_prev:hover i {
-    border-color: #00ffcc;
-    color: #00ffcc;
+    border-color: #ff8300;
+    color: #ff8300;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
@@ -1763,8 +1763,8 @@ body,
 }
 
 #rock_track_playlist_slider_next:hover i {
-    border-color: #00ffcc;
-    color: #00ffcc;
+    border-color: #ff8300;
+    color: #ff8300;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
@@ -1912,7 +1912,7 @@ body,
 }
 
 .rock_pager ul li:last-child a {
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 
@@ -2132,7 +2132,7 @@ body,
 
 .blog_entry_meta ul li a i {
     padding-right: 5px;
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 .rock_blog {
@@ -2218,7 +2218,7 @@ body,
 }
 
 .rock_categories ul li a:hover {
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 .rock_categories ul li ul {
@@ -2261,8 +2261,8 @@ body,
 }
 
 .rock_tag ul li a:hover {
-    border-color: #00ffcc;
-    color: #00ffcc;
+    border-color: #ff8300;
+    color: #ff8300;
 }
 
 
@@ -2308,8 +2308,8 @@ body,
 }
 
 .rock_pagination ul li a:hover {
-    color: #00ffcc;
-    border-color: #00ffcc;
+    color: #ff8300;
+    border-color: #ff8300;
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -2323,8 +2323,8 @@ body,
 }
 
 .rock_pagination ul li.active a {
-    color: #00ffcc;
-    border-color: #00ffcc;
+    color: #ff8300;
+    border-color: #ff8300;
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -2537,12 +2537,12 @@ body,
 }
 
 .rock_event_date .event_date h1 {
-    color: #00ffcc;
+    color: #ff8300;
     font-size: 40px;
 }
 
 .rock_event_date .event_date p {
-    color: #00ffcc;
+    color: #ff8300;
     text-transform: uppercase;
 }
 
@@ -2618,7 +2618,7 @@ body,
 
 .main_gallery_item_popup h1 {
     margin-top: 30px;
-    color: #00ffcc;
+    color: #ff8300;
     text-transform: uppercase;
 }
 
@@ -2630,7 +2630,7 @@ body,
 .main_gallery_item_popup h4 {
     margin-top: 40px;
     text-transform: uppercase;
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 .main_gallery_item_popup_close {
@@ -2728,11 +2728,11 @@ body,
 }
 
 .rock_comment:hover {
-    border-color: #00ffcc;
+    border-color: #ff8300;
 }
 
 .rock_comment:hover a.btn {
-    border-color: #00ffcc;
+    border-color: #ff8300;
 }
 
 .rock_comment img {
@@ -2811,7 +2811,7 @@ body,
 }
 
 .rock-icon-list .fa-hover a:hover {
-    background-color: #00ffcc;
+    background-color: #ff8300;
     color: #0d0d0d;
     text-decoration: none;
 }
@@ -2877,7 +2877,7 @@ Pricing table(Alternative 2)
 }
 
 .pricing:hover h4 {
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 .pricing-head {
@@ -2918,7 +2918,7 @@ Pricing table(Alternative 2)
 }
 
 .pricing-head-active h4 {
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 .pricing-head h4 i {
@@ -2956,7 +2956,7 @@ Pricing table(Alternative 2)
 
 .pricing-content li i {
     top: 2px;
-    color: #00ffcc;
+    color: #ff8300;
     font-size: 18px;
     margin-right: 5px;
     position: relative;
@@ -3045,7 +3045,7 @@ Pricing table(Alternative 2)
     display: inline-block;
     font-size: 10vw;
     font-weight: bolder;
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 .rock_404 h5 {
@@ -3249,7 +3249,7 @@ Pricing table(Alternative 2)
 }
 
 .rock_footer h3 {
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 .rock_recent_post {
@@ -3344,7 +3344,7 @@ Pricing table(Alternative 2)
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background: #00ffcc;
+    background: #ff8300;
     color: #000;
     float: left;
     /* display: inline-block; */
@@ -3361,7 +3361,7 @@ Pricing table(Alternative 2)
 .rock_twitter_feed ul li .rock_feed {
     margin-left: 30px;
     padding: 0px 20px;
-    border-left: 2px solid #00ffcc;
+    border-left: 2px solid #ff8300;
 }
 
 .rock_twitter_feed ul li .rock_feed a {
@@ -3727,7 +3727,7 @@ Pricing table(Alternative 2)
     .rock_menu ul {
         position: relative;
         float: none;
-        border: 1px solid #00ffcc;
+        border: 1px solid #ff8300;
         padding: 0px;
     }
     .rock_menu ul li {
@@ -3742,7 +3742,7 @@ Pricing table(Alternative 2)
         padding: 10px 20px;
     }
     .rock_menu ul li a:hover {
-        background: #03ac89;
+        background: #ff8300;
         color: #000;
     }
     .rock_menu ul li a:after {
@@ -3753,21 +3753,21 @@ Pricing table(Alternative 2)
         width: 100%;
         margin: 0;
         padding: 0;
-        background: #03ac89;
+        background: #ff8300;
     }
     .rock_menu ul li ul li a {
         background-color: transparent;
         color: #fff;
     }
     .rock_menu ul li ul li a:hover {
-        background: #00ffcc;
+        background: #ff8300;
     }
     .rock_menu ul li ul li ul {
         position: relative;
         left: 0;
         margin: 0;
         padding: 0;
-        background: #00ffcc;
+        background: #ff8300;
     }
     #rock_header_single_page {
         position: relative;
@@ -3940,7 +3940,7 @@ Pricing table(Alternative 2)
     .rock_menu ul {
         position: relative;
         float: none;
-        border: 1px solid #00ffcc;
+        border: 1px solid #ff8300;
         padding: 0px;
     }
     .rock_menu ul li {
@@ -3955,7 +3955,7 @@ Pricing table(Alternative 2)
         padding: 10px 20px;
     }
     .rock_menu ul li a:hover {
-        background: #03ac89;
+        background: #ff8300;
         color: #000;
     }
     .rock_menu ul li a:after {
@@ -3966,7 +3966,7 @@ Pricing table(Alternative 2)
         width: 100%;
         margin: 0;
         padding: 0;
-        background: #03ac89;
+        background: #ff8300;
     }
     .rock_menu ul li ul li a {
         background-color: transparent;
@@ -3980,7 +3980,7 @@ Pricing table(Alternative 2)
         left: 0;
         margin: 0;
         padding: 0;
-        background: #00ffcc;
+        background: #ff8300;
     }
     /*----------------menu responsive css end----------------*/
     .rock_welcome_note {
@@ -4127,8 +4127,8 @@ Pricing table(Alternative 2)
 }
 
 .rock_slider_contentt .btn:hover {
-    border-color: #00ffcc;
-    color: #00ffcc;
+    border-color: #ff8300;
+    color: #ff8300;
 }
 
 .rock_slider_contentt p {
@@ -4137,7 +4137,7 @@ Pricing table(Alternative 2)
 }
 
 .slider_welcome span {
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 .btn-check:focus+.btn,
@@ -4495,14 +4495,14 @@ Pricing table(Alternative 2)
     padding: 10px 10px;
     display: inline-block;
     font-weight: 500;
-    color: #00ffcc;
+    color: #ff8300;
     text-transform: uppercase;
     font-size: var(--cat-font14);
 }
 
 .main-menu ul>li>a:hover,
 .main-menu ul>li.active>a {
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 .main-menu .sub-menu>li>a {
@@ -4517,7 +4517,7 @@ Pricing table(Alternative 2)
     left: 0;
     height: 1px;
     width: 0px;
-    background: #00ffcc;
+    background: #ff8300;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -4525,11 +4525,11 @@ Pricing table(Alternative 2)
 
 .has-sub-menu>.sub-menu>li:hover>a,
 .main-menu ul>li>a.active {
-    color: #00ffcc;
+    color: #ff8300;
 }
 
 .has-sub-menu>.sub-menu>li:hover>a:before {
-    color: #00ffcc;
+    color: #ff8300;
     width: 10px;
 }
 
@@ -4560,7 +4560,7 @@ Pricing table(Alternative 2)
     justify-content: center;
     color: #ffffff;
     margin: 0 0 0 20px;
-    background: #00ffcc;
+    background: #ff8300;
     border-radius: 50%;
 }
 
@@ -4626,7 +4626,7 @@ select option {
 } */
 
 .label-default {
-    color: #0fc;
+    color: #ff8300;
 }
 
 .rock_club_track_div {
@@ -4725,14 +4725,14 @@ button#home-tab {
 }
 
 .nav-link {
-    color: #03ac89;
+    color: #ff8300;
 }
 
 .nav-link:focus,
 .nav-link:hover {
     text-decoration: none;
     color: #000;
-    background-color: #0fc !important;
+    background-color: #ff8300 !important;
 }
 
 
@@ -4783,14 +4783,14 @@ button#home-tab {
 }
 
 .nav-link {
-    color: #03ac89;
+    color: #ff8300;
 }
 
 .nav-link:focus,
 .nav-link:hover {
     text-decoration: none;
     color: #000;
-    background-color: #0fc !important;
+    background-color: #ff8300 !important;
 }
 
 
@@ -4991,7 +4991,7 @@ body .bx-wrapper {
 
 .form-control:focus,
 .form-control:hover {
-    border-color: #0fc;
+    border-color: #ff8300;
     outline: 0;
     background: inherit;
     color: #fff;
@@ -5011,8 +5011,8 @@ textarea.form-control {
 .btn-default:focus,
 .btn-default:hover,
 .open .dropdown-toggle.btn-default {
-    color: #0fc;
-    border-color: #03ac89;
+    color: #ff8300;
+    border-color: #ff8300;
 }
 
 button,
@@ -5111,7 +5111,7 @@ audio {
         transition: 0.3s;
         overflow-y: auto;
         overflow-x: hidden;
-        border-right: 1px solid #00ffcc;
+        border-right: 1px solid #ff8300;
         display: block;
         box-shadow: 0 0 20px rgb(0 0 0 / 45%);
     }
@@ -5123,7 +5123,7 @@ audio {
         position: absolute;
         bottom: 0;
         content: '';
-        background: #00ffcc;
+        background: #ff8300;
     }
     .main-menu .has-sub-menu:after {
         right: 21px;
@@ -5144,7 +5144,7 @@ audio {
         background-color: #212121;
     }
     .main-menu>ul::-webkit-scrollbar-thumb {
-        background-color: #00ffcc;
+        background-color: #ff8300;
     }
     .main-menu .sub-menu {
         display: none;
