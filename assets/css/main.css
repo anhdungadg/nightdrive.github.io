@@ -1,0 +1,30 @@
+/*
+Copyright (c) 2021 Himanshu Softtech.
+------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	RockOn HTML Template
+Version:	1.1
+Assigned to:	Themeforest
+-------------------------------------------------------------------*/
+
+@import url("bootstrap.min.css");
+@import url("font-awesome.css");
+@import url("animate.min.css");
+@import url("style.css");
+
+/****ImageGrid****/
+
+@import url("../js/plugin/ImageGrid/css/style.css");
+@import url("../js/plugin/owl-carousel/owl.carousel.min.css");
+@import url("../js/plugin/owl-carousel/owl.theme.default.min.css");
+@import url("../js/plugin/bxslider/jquery.bxslider.css");
+@import url("../js/plugin/fancybox/jquery.fancybox.css");
+
+/*datetime picker*/
+
+@import url("../js/plugin/datetime/jquery.datetimepicker.css");
+
+/*html5 player and video-player*/
+
+@import url("../js/plugin/video/mediaelementplayer.css");
