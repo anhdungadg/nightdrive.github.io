@@ -3842,7 +3842,8 @@ Pricing table(Alternative 2)
 @media (max-width: 479px) {
     .rock_footer.rock_footer_home {
         margin: 0;
-        padding: 530px 0px 0px 0px !important;
+        /* padding: 530px 0px 0px 0px !important; */
+		padding: 0px 0px 0px 0px !important;
     }
     .rock_club_photo.rock_club_photo_bottom_space {
         margin-bottom: 30px;
