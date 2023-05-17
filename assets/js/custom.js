@@ -363,7 +363,7 @@ Project:	RockOn HTML Template
                 columns: 8,
                 maxStep: 2,
                 interval: 2000, // adjust flip interval of page title background grid 
-               
+
             });
         },
         Player: function() {
@@ -384,7 +384,7 @@ Project:	RockOn HTML Template
             $('.bxslider-ffoter').bxSlider({
                 mode: 'vertical',
                 slideMargin: 5,
-                minSlides: 2,
+                minSlides: 4,
                 auto: true,
                 default: 500,
                 controls: false,
@@ -480,7 +480,7 @@ Project:	RockOn HTML Template
                     1200: {
                         items: 4,
                     },
-                   
+
                     991: {
                         items: 2,
                     },
@@ -512,12 +512,12 @@ Project:	RockOn HTML Template
                 columns: 8,
                 maxStep: 2,
                 interval: 2000,
-               
+
             });
         },
 
         OtherJS: function() {
-          
+
 
 
             // logo animation
