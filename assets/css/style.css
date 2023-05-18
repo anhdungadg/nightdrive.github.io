@@ -1,4 +1,3 @@
-
 /* Copyright (c) 2018 Himanshu Softtech.
 ------------------------------------------------------------------
 [Table of contents]
@@ -158,7 +157,7 @@ h6 {
 h1,
 h2,
 h3 {
-    margin-top: 20px;
+    margin-top: 18px;
     margin-bottom: 10px;
 }
 
@@ -410,9 +409,11 @@ ul.pattern li #style {
     width: 100%;
     z-index: 999;
 }
+
 .row.footerRow {
     margin: 120px 0 0px;
 }
+
 .rock_logo_slider:after {
     width: 100%;
     height: 100%;
@@ -509,9 +510,11 @@ body,
     background: #000000;
     z-index: 99;
 }
+
 .rock-search-main-wrapper {
     padding: 70px 0px 0px 0px;
 }
+
 #rock_header_single_page {
     width: 100%;
     float: left;
@@ -521,11 +524,13 @@ body,
     background: #000000;
     z-index: 99;
 }
-#rock_header_single_page_01{
+
+#rock_header_single_page_01 {
     background: #000000;
     width: 100%;
     z-index: 99;
 }
+
 .rock_header_fixed {
     position: fixed !important;
     top: 0 !important;
@@ -934,6 +939,7 @@ body,
     transition: all 0.5s;
     margin-bottom: 30px;
 }
+
 .rock_service:after {
     content: "";
     position: absolute;
@@ -1113,7 +1119,7 @@ body,
 
 .rock_event .rock_event_tab ul li {
     background: #080808;
-    padding: 8.6px 0px;
+    padding: 9.6px 0px;
     border-bottom: 1px solid #232323;
     border-left: 2px solid rgba(0, 0, 0, 0);
 }
@@ -1170,7 +1176,7 @@ body,
 
 .rock_event .rock_event_tab ul li a p.rock_event_month {
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     text-transform: uppercase;
     font-weight: 100;
 }
@@ -1259,7 +1265,7 @@ body,
     vertical-align: middle;
     width: 100%;
     float: left;
-    min-height: 340px;
+    min-height: 320px;
 }
 
 .rock_event_time ul {
@@ -1283,7 +1289,7 @@ body,
     background: #080808;
     font-size: 35px;
     display: inline-block;
-    padding: 28px 10px 32px;
+    padding: 16px 10px 16px;
     text-align: left;
     border-bottom: 1px solid #232323;
     -webkit-transform: scale(1);
@@ -1315,6 +1321,7 @@ body,
     line-height: 35px;
     text-align: center;
     color: #fff;
+    text-transform: uppercase;
 }
 
 
@@ -1927,15 +1934,19 @@ body,
     text-align: center;
     margin-bottom: 20px;
 }
+
 .rock_heading.rock_heading_disc_jockey h1 {
     margin: 40px 0 50px;
 }
+
 .rock_heading.rock_heading_offers h1 {
     margin-top: 20px;
 }
+
 .rock_about_welcome.rock-about-page-welcome {
     padding-top: 43px;
 }
+
 .rock_about_welcome h1 span {
     font-weight: bolder;
 }
@@ -3191,7 +3202,6 @@ Pricing table(Alternative 2)
     position: relative;
     width: 100%;
     float: left;
- 
     background: url(../images/bg/main_bg.png) repeat;
 }
 
@@ -3392,24 +3402,33 @@ Pricing table(Alternative 2)
 .rock_heading.rock-4comments-leftsidebar h1 {
     margin: 15px 0px 50px;
 }
+
+
 /*---------------------Footer end---------------------*/
 
+
 /* extra css start */
+
 .blogcategory_container.blogcategory_full_width_page {
     margin: 70px 0 60px;
 }
+
 .blog_left_main_wrapper.blog_leftSidebar_page {
     padding: 70px 0px 0;
 }
+
 .rock_heading.rock_heading_reserve h1 {
     margin-top: 0px;
 }
+
 .rock_book_table_main.rock_bookTable_main {
     margin-top: 70px;
 }
+
 .rock_heading.rock_heading_column h1 {
     margin-top: 30px;
 }
+
 .rock_column.rock_column_main_wrapper {
     margin-bottom: 50px;
 }
@@ -3417,18 +3436,23 @@ Pricing table(Alternative 2)
 .rock_contact.rock_contact_page {
     margin: 70px 0px 60px;
 }
+
 .rock_event_main_wrapper {
     padding: 70px 0px 0px;
 }
+
 .rock_main_gallery.rock_main_gallery_column_two {
     margin: 60px 0px 20px;
 }
+
 .container.rock_icon.rock_icons_wrapper {
     padding: 45px 0px 0;
 }
+
 .rock_welcome_note.rock-welcome-main-wrapper {
     padding: 20px 0px 0px;
 }
+
 .rock_heading_div.rock_club_photo_heading {
     padding-top: 30px;
 }
@@ -3436,37 +3460,48 @@ Pricing table(Alternative 2)
 .rock_club_photo.rock_club_photo_bottom_space {
     margin-bottom: 70px;
 }
+
 .rock_price.rock_price_main_warpper {
     margin: 70px 0px 10px;
 }
+
 .rockon_service_main.rockon_service_main_wrapper {
     margin: 70px 0px 0px;
 }
+
 .rock_single_page_Wrapper {
     padding: 40px 0px 4px;
 }
+
 .rock_club_track_main.rock_club_track01 {
     margin-top: 50px;
 }
+
 .rock_heading.rock_headingReserve h1 {
     margin-top: 0px;
 }
+
 .table_form.table_form_bottom_space {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
 .rock_heading.rock_heading_service {
     padding: 50px 0px 0px;
 }
+
 .container-fluid.rockon_section_space_service {
     padding-bottom: 40px;
 }
+
 .rock_heading.rock_headingPricingTable h1 {
     margin-top: 20px;
 }
+
 .rock_price.rock_price_bottom_space {
     margin-bottom: 15px;
 }
+
 .rock_heading.rock_disc_jockey_heading h1 {
     margin-top: 35px;
 }
@@ -3474,19 +3509,18 @@ Pricing table(Alternative 2)
 .rock_disc_jockcy.rock_disc_jockcy_bottom_space {
     margin-bottom: 0;
 }
+
 .rock_heading.rock-contact-us-heading h1 {
     margin-top: 50px;
 }
+
 .rock_contact.rock_contact_main_wrapper {
     margin-bottom: 50px;
 }
+
 .rock_heading.rock_4comments h1 {
     margin-top: 10px;
 }
-
-
-
-
 
 
 /*---------------------media css start---------------------*/
@@ -3518,7 +3552,8 @@ Pricing table(Alternative 2)
 
 
 /* Large desktop */
-@media(min-width:1200px){
+
+@media(min-width:1200px) {
     .rock_menu ul li:hover ul {
         display: block;
         transform: scaleY(1);
@@ -3526,6 +3561,7 @@ Pricing table(Alternative 2)
         visibility: visible;
     }
 }
+
 @media (max-width: 1200px) {
     .rock_comment_auther h4,
     .rock_comment_auther h5 {
@@ -3611,13 +3647,15 @@ Pricing table(Alternative 2)
         top: 54%;
     }
     .rock_slider_contentt {
-     
         padding: 0px 30px;
     }
+    .favicon_logo {
+        display: none;
+    }
 }
-@media(max-width:767px){
+
+@media(max-width:767px) {
     .rock_event_time {
-      
         min-height: 100%;
     }
     img.img-center {
@@ -3633,10 +3671,10 @@ Pricing table(Alternative 2)
     section#spinner {
         padding: 0px 30px;
     }
-    section#form-control{
+    section#form-control {
         padding: 0px 30px;
     }
-    section#currency{
+    section#currency {
         padding: 0px 30px;
     }
     section#text-editor {
@@ -3651,10 +3689,11 @@ Pricing table(Alternative 2)
     section#brand {
         padding: 0px 30px 0 30px;
     }
-    section#medical{
+    section#medical {
         padding: 0px 10px 0 30px;
     }
 }
+
 
 /* Portrait tablet to landscape and desktop */
 
@@ -3843,7 +3882,7 @@ Pricing table(Alternative 2)
     .rock_footer.rock_footer_home {
         margin: 0;
         /* padding: 530px 0px 0px 0px !important; */
-		padding: 0px 0px 0px 0px !important;
+        padding: 0px 0px 0px 0px !important;
     }
     .rock_club_photo.rock_club_photo_bottom_space {
         margin-bottom: 30px;
@@ -4045,7 +4084,6 @@ Pricing table(Alternative 2)
     .main_gallery_item_popup {
         padding: 27px;
     }
-   
     #rock_header_single_page {
         position: relative;
         margin-top: 50px;
@@ -4085,7 +4123,6 @@ Pricing table(Alternative 2)
     .rock_event .rock_event_tab_content_main .rock_event_tab_content .rock_event_detail {
         padding: 10px 25px 10px 20px;
     }
-   
     #rock_header_single_page {
         position: relative;
         margin-top: 50px;
@@ -5077,8 +5114,9 @@ audio {
 .rock_has_slider_bg .rock_slider_div section>.rock_slider .banner-carousel>div>div>div {
     height: 100%;
 }
-@media(max-width:1700px){
-    #rock_header_single_page{
+
+@media(max-width:1700px) {
+    #rock_header_single_page {
         top: 0;
     }
 }
@@ -5089,14 +5127,16 @@ audio {
         left: 0%;
     }
 }
-@media(max-width:1200px){
+
+@media(max-width:1200px) {
     .rock_heading p {
         display: none;
     }
-    .rock_heading h1:after{
+    .rock_heading h1:after {
         display: none;
     }
 }
+
 @media (max-width: 1199.98px) {
     .main-menu>ul {
         background: #0c0b0b;
@@ -5176,9 +5216,11 @@ audio {
         content: unset;
     }
 }
+
+
 /* //////////////////////////////////////////// */
-@media(max-width:991px){
-  
+
+@media(max-width:991px) {
     img.animated.bounceInLeft.banner-img {
         display: none;
     }
@@ -5189,11 +5231,9 @@ audio {
         margin: 0;
     }
     .rock_blog {
-    
         margin-bottom: 0;
     }
     .rockon_service {
-    
         margin-bottom: 30px;
     }
     .col-lg-12.order-05 {
@@ -5239,7 +5279,6 @@ audio {
         position: unset;
         margin-top: 0;
     }
-
 }
 
 @media (max-width: 575.98px) {
@@ -5249,7 +5288,7 @@ audio {
     .rock_slider .item>.row {
         align-items: flex-end;
     }
-    .rock_club_track_div{
+    .rock_club_track_div {
         display: block;
     }
 }

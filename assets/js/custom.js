@@ -448,9 +448,9 @@ Project:	RockOn HTML Template
             rcps_owl.owlCarousel({
                 items: 3,
                 itemsDesktop: [1000, 3],
-                itemsDesktopSmall: [900, 2],
-                itemsTablet: [600, 2],
-                itemsMobile: false,
+                itemsDesktopSmall: [900, 1],
+                itemsTablet: [600, 1],
+                itemsMobile: true,
                 nav: true,
                 dots: false,
                 navText: ['<span class="rock_slider_button prev"><i class="fa fa-angle-left"></i></span>', '<span class="rock_slider_button prev"><i class="fa fa-angle-right" aria-hidden="true"></i></span>']
