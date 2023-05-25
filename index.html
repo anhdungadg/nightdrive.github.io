@@ -370,12 +370,23 @@
                         <div class="main-menu-container rock_menu rock_menu_single">
                             <!-- Header Menus -->
                             <div class="main-menu">
+                                <div id="google_translate_element" style="position: fixed;
+                                        overflow: hidden;
+                                        z-index: 2400;
+                                        opacity: 0.70;
+                                        right: 30px;
+                                        top: 0px !important;
+                                        -webkit-transition: all 0.5s ease-in-out;
+                                        -moz-transition: all 0.5s ease-in-out;
+                                        -ms-transition: all 0.5s ease-in-out;
+                                        -o-transition: all 0.5s ease-in-out;
+                                        transition: all 0.5s ease-in-out;"></div>
                                 <ul>
                                     <li><a target="_blank" href="https://m.me/j/AbaH7aVl-DWKMVMX/">Cộng đồng</a></li>
                                     <li><a href="#">Luật chơi</a></li>
                                     <li><a href="#">Trách nhiệm</a></li>
                                     <li>
-                                        <a title="English Version" href="en/index.html"><img style="max-height: 20px;" src="assets/images/lang-eng.png" /></a>
+                                        <!-- <a title="English Version" href="en/index.html"><img style="max-height: 20px;" src="assets/images/lang-eng.png" /></a> -->
                                     </li>
                                     <!-- <li style="display:none"><a href="javascript:void(0);">Blog</a>
                                         <ul class="sub-menu">
@@ -1355,6 +1366,18 @@
 
         gtag('config', 'G-8E225KQ2GJ');
     </script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'vi',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 <!--body end-->
 
