@@ -1,0 +1,717 @@
+<!--
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡤⢤⣶⣶⣶⣶⣶⣒⣒⣀⣺⣿⣿⠿⢶⣶⣶⣶⣦⣤⣤⣤⣄⣀⣀⣀⣀⡀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠴⠚⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠛⠒⠲⠦⢤⣉⠙⣿⣿⣿⣟⢿⣿⠿⠿⠿⢿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣶⣷⡦⠞⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⡇⠀⠈⠛⢿⣿⡀⠀⠀⠀⠻
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣤⠤⢴⣿⣉⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠇⠀⠀⠀⠀⠙⣿⣄⡀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣤⡶⠞⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠓⠒⠒⠢⠤⠤⣄⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⠀⢠⠤⠤⠤⣤⣾⠀⠙⢦⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⣠⠴⣾⣛⣩⢴⣿⠿⠶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠙⠒⠒⠒⠤⠤⢤⣤⣾⢿⣴⢏⣀⣀⣤⡼⠻⡆⠀⠈⢷
+⠀⠀⠀⠀⠀⢀⣴⠋⠁⠀⠀⠀⠀⠙⠓⠲⠤⠬⠷⠀⠀⢀⣀⣀⣀⣀⣀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠤⡞⠉⠀⠀⠹⡟⠀⠀⠀⠀⠀⢱⠀⢠⣼
+⠀⠀⠀⣀⡴⠋⠈⢙⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠢⠤⢄⣀⣠⠴⠛⣋⣠⠴⠒⠉⠉⢉⣲⠶⠀⣀⡠⠤⠒⠊⠉⠁⠀⠀⠀⠠⠀⡂⠐⢹⠂⠀⠀⠀⠀⣼⢰⣿⣿
+⡀⣠⣼⠏⠀⠀⣰⠟⠦⢤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠓⠒⠒⠒⠋⣉⠤⠒⠋⠁⠀⠀⠀⠀⡀⠠⠀⠈⠀⠁⠀⠀⠀⢸⠀⠀⠀⠀⢀⣯⣼⣿⣿
+⡟⠋⠹⢤⣠⠞⠁⠀⠀⠀⠀⠈⠉⠐⠲⠤⢄⣀⡀⠀⠀⠀⠀⣀⠤⠤⠤⠤⠤⣄⣀⣀⠀⢀⡠⠖⠋⠀⠀⠀⠄⡠⢐⠤⠀⠂⠀⣀⣀⡀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⢸⣿⣿⣿⣿
+⢻⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⢒⡶⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⢦⠀⠀⠀⠈⠈⠀⠀⠀⠀⢀⣴⣿⡿⣿⡝⣆⠀⠀⠀⠴⣽⠤⠞⣠⣵⠿⣻⣿⣿⠈
+⢿⣿⣿⠶⢤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⠇⠀⠀⠀⠀⣀⣀⣤⣤⣾⣿⢿⡆⢸⣧⢹⠀⠄⣪⣶⣿⣴⠟⢋⣥⠴⢻⣿⠏⠀
+⢸⣿⣿⡇⠀⠘⣿⣶⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠈⠑⠲⠤⢤⣀⣀⡀⠀⠀⠀⠀⠀⠀⣀⣀⣞⣀⣠⣤⣾⣿⣿⣿⣿⣿⣿⢻⢸⣿⣾⣿⣾⣤⣾⣿⠿⢋⡡⠞⠉⠉⠉⠉⠀⠀⠀
+⣼⡟⣿⡇⠀⠀⢹⣄⠈⠙⠒⠯⣽⣶⢶⣤⣤⣄⣀⣀⠀⠀⠀⠀⠈⠙⠻⠿⠿⠿⠿⠿⠿⠛⠛⠛⢉⣉⣽⠶⣿⠟⣿⣿⣧⣿⣾⣿⣿⡇⢹⡿⠋⣡⠖⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣇⠳⣼⣧⠴⠛⠉⠉⠉⠒⣦⣤⣀⡀⠀⠀⠉⠙⢦⠀⠉⠉⢙⣷⣶⠒⠒⠒⠶⡶⠶⠶⢶⣤⠖⠚⠉⠁⠀⣰⣷⠾⣿⢿⢥⣼⣾⣿⣿⠃⣸⣠⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠈⠳⣌⣿⢦⣄⠀⢀⣴⣿⣿⣷⣿⡯⣗⠲⠤⣀⡈⣇⠀⠀⠻⡄⠈⣷⠀⠀⠀⡿⠒⠶⠾⢿⠀⠀⠀⢠⣾⡏⠁⣸⡇⢸⡸⢠⡌⢡⣿⠴⠿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠈⠙⠳⢿⣙⠺⢽⣿⣮⣿⣿⠗⠋⠀⠀⠀⠉⡿⠀⠀⣀⣹⣿⣯⣤⣶⣚⣛⣒⣛⣓⣿⠀⠀⠀⢽⣿⣶⣶⡏⢧⣼⣷⡿⢁⣾⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⠙⠢⢬⣙⠛⠧⢤⣀⣀⠀⢀⣴⠃⠀⢀⣹⢦⣤⣉⣉⣯⣍⣹⣿⣿⣿⡃⣀⡤⠴⠛⠋⠁⠀⡇⠘⣜⣏⣠⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠓⠦⢤⣈⡉⠉⠙⠛⠛⠛⠲⠤⠤⠤⠴⣶⣶⣿⣿⢿⡿⣯⠀⠀⠀⠀⠀⢀⣠⡟⠤⠿⠟⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠒⠲⠤⢤⣄⣀⣀⣀⣤⣈⣤⣤⠤⣴⣿⣥⠤⠴⠒⠚⠋⠉⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+-->
+
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>Night Drive Saigon - Đi đâu, Ăn gì, Ở đâu</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="Night Drive Saigon, Saigon Night Drive, chuyến đi trên xe hơi vào ban đêm để khám phá các địa điểm thú vị" />
+    <meta name="keywords" content="SaigonNightDrive,NightDriveSaigon,CarEnthusiast,CarCommunity,CarLifestyle,CarPorn,Supercars,LuxuryCars,ExoticCars,ClassicCars,CarCulture,DriveLife,CarsWithoutLimits,AutomotivePhotography,StreetPhotography,NightPhotography">
+    <meta name="author" content="Saigon Night Drive Group" />
+    <meta name="MobileOptimized" content="320">
+    <!--srart theme style -->
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" id="theme-color" type="text/css" href="#" />
+    <link rel="stylesheet" id="theme-pattern" type="text/css" href="#" />
+    <!-- end theme style -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta property="og:image" content="https://nightdrivesaigon.com/assets/images/slider/slider1.png" />
+</head>
+<!--body start-->
+
+<body>
+    <!--Pre loader start-->
+    <div id="preloader">
+        <div id="status"><img src="assets/images/loading-car.gif" id="preloader_image" width="100" height="100" alt="loading image" /></div>
+    </div>
+    <!--pre loader end-->
+
+    <!--header start-->
+    <header id="rock_header_otherpage">
+        <div class="container">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="row">
+                            <div class="col rock_logo">
+                                <a data-link="rockon_home"><img src="assets/images/Logo1.png" alt="logo" /></a>
+                            </div>
+                            <div class="col favicon_logo">
+                                <img style="max-height:70px; padding-top:10px; position: absolute;" src="assets/images/favicon.png" alt="logo" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-6 col-6">
+                        <div class="main-menu-container rock_menu rock_menu_single">
+                            <!-- Header Menus -->
+                            <div class="main-menu">
+                                <div id="google_translate_element" style="position: fixed;
+                                        overflow: hidden;
+                                        z-index: 2400;
+                                        opacity: 0.70;
+                                        right: 30px;
+                                        top: 0px !important;
+                                        -webkit-transition: all 0.5s ease-in-out;
+                                        -moz-transition: all 0.5s ease-in-out;
+                                        -ms-transition: all 0.5s ease-in-out;
+                                        -o-transition: all 0.5s ease-in-out;
+                                        transition: all 0.5s ease-in-out;"></div>
+                                <ul>
+                                    <li><a target="_blank" href="https://m.me/j/AbaH7aVl-DWKMVMX/">Cộng đồng</a></li>
+                                    <li><a href="#">Luật chơi</a></li>
+                                    <li><a href="#">Trách nhiệm</a></li>
+                                    <li>
+                                        <!-- <a title="English Version" href="en/index.html"><img style="max-height: 20px;" src="assets/images/lang-eng.png" /></a> -->
+                                    </li>
+                                    <!-- <li style="display:none"><a href="javascript:void(0);">Blog</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog_category.html">Blog Category</a></li>
+                                            <li><a href="blog_full_width.html">Blog Full Width</a></li>
+                                            <li><a href="single_page.html">Blog Single Page</a></li>
+                                            <li><a href="blog_left_sidebar.html">Blog Left sidebar</a></li>
+                                            <li><a href="blog_right_sidebar.html">Blog right sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li style="display:none"><a href="javascript:void(0);">Pages</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="event.html">Events</a></li>
+                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="elements.html">Elements</a></li>
+                                            <li><a href="prices.html">Price Table</a></li>
+                                            <li><a href="columns.html">Columns</a></li>
+                                            <li><a href="404.html">404 Page</a></li>
+                                            <li><a href="icon.html">Icon</a></li>
+                                        </ul>
+                                    </li>
+                                    <li style="display:none"><a href="javascript:void(0);">Gallery</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="gallery_2column.html">Gallery 2 Column</a></li>
+                                            <li><a href="gallery_3column.html">Gallery 3 Column</a></li>
+                                            <li><a href="gallery_4column.html">Gallery 4 Column</a></li>
+                                        </ul>
+                                    </li>
+                                    <li style="display:none"><a href="booking.html">Book table</a></li>
+                                    <li style="display:none"><a href="about.html">About Us</a></li>
+                                    <li style="display:none"><a href="contact.html">Contact Us</a></li> -->
+                                </ul>
+                            </div>
+                            <div class="menu-btn-wrap">
+                                <a href="javascript:void(0);" class="menu-btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header end-->
+
+
+    <!--page title start-->
+    <div class="rock_page_title_main">
+        <div class="rock_page_title_bg">
+            <section class="main">
+                <div id="rock_page_title_bg" class="ri-grid ri-grid-size-3">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/1.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/2.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/3.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/4.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/5.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/6.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/7.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/8.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/9.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/10.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/11.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/12.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/13.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/14.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/15.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/16.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/17.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/18.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/19.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/20.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/21.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/22.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/23.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/24.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/25.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/26.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/27.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/28.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/29.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/30.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/31.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/32.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/33.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/34.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/35.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/36.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/37.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/38.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/39.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/40.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/41.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/42.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/43.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/44.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/45.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/46.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/47.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/48.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/49.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/50.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/51.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/52.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/53.jpg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/medium/54.jpg" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="rock_page_title">
+            <div class="container">
+                <div class="rock_heading_div">
+                    <div class="rock_heading">
+                        <h1>Đi đâu - Ăn gì - Ở đâu</h1>
+                        <p>X</p>
+                    </div>
+                </div>
+                <div class="rock_pager">
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="/directory.html">Night Drive Saigon đề cử</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--page title end-->
+    <div class="clearfix"></div>
+    <div class="rock_margin_30"></div>
+
+    <!--main container start-->
+    <div class="rock_single_page_Wrapper">
+
+
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <iframe src="https://notioniframe.com/notion/2rlvbdbmgwt" style="width: 100%; height: 50vh; border: 0; padding: 0"></iframe>
+                        <!-- <div class="rock_blog_single"> <img src="../assets/images/blog/blog_single1.jpg" alt="blog single" />
+                            <h2>Aenean ultrices feugiat.</h2>
+                            <div class="blog_entry_meta">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-user"></i> Glafira Lone</a></li>
+                                    <li><a href="#"><i class="fa fa-calendar"></i> 17 April 14</a></li>
+                                    <li><a href="#"><i class="fa fa-comments"></i> 114 Comments</a></li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <p>Vestibulum imperdiet nisi a arcu viverra lobortis. Aliquam dignissim metus condimentum pharetra gravida. Nulla pellentesque quam diam, ac interdum dolor tempus id. Phasellus ultricies suscipit lacus vel posuere. Nam erat odio,
+                                varius sit amet ultrices at, sodales rhoncus tellus. In elementum magna vitae viverra posuere. Quisque ut tortor quis tortor hendrerit scelerisque vel eget augue. Nunc sollicitudin elit nisi, ac ullamcorper mauris ullamcorper
+                                in. Fusce sed varius massa, sit amet sodales lorem. Curabitur ornare nunc quis augue hendrerit tristique. Aenean consequat turpis mollis dolor iaculis, sit amet congue nulla viverra. Cum sociis natoque penatus et magnis dis
+                                parturient montes, nascetur ridiculus mus. Cras sed nisl nec enim sodales ultricies.</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <!--footer start-->
+            <div class="rock_footer rock_footer_home">
+                <div class="container">
+                    <div class="row footerRow">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <!-- <div class="rock_footer_logo"> <img src="assets/images/Logo1.png" alt="footer logo" />
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <img style="max-width: 150px;" src="assets/images/qr-succ.png" />
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <img style="max-width: 150px;" src="assets/images/qr-succ-mess.png" />
+                                </div>
+                            </div> -->
+                            <div class="rock_recent_post">
+                                <h3>Bảo trợ truyền thông</h3>
+                                <p>
+                                    <a target="_blank" href="https://asiagenz.com"><img src="assets/images/asiagenz-logo-white.png" /></a>
+                                </p>
+                            </div>
+                            <!-- <h3>Bảo trợ hình ảnh</h3>
+                            <p>
+                                <p>
+                                    <a target="_blank" href="#"><img src="assets/images/futomedia-logo.jpg" /></a>
+                                </p>
+                            </p> -->
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="rock_recent_post">
+                                <h3>Truyền thông</h3>
+                                <ul class="bxslider bxslider-ffoter">
+                                    <li>
+                                        <a target="_blank" href="https://asiagenz.com/saigon-night-drive-dem-xe-cung-ban-be/">
+
+                                            <div class="rock_post_detail">Saigon Night Drive – Đêm xe cùng bạn bè!</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://asiagenz.com/bmw-e46-ngoi-sao-sang-tai-saigon-night-drive/">
+                                            <div class="rock_post_detail">BMW E46 – Ngôi sao sáng tại Saigon Night Drive</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://asiagenz.com/nhung-dieu-can-luu-y-khi-cam-nhan-khoang-cach-giua-cac-xe-co-tren-duong/">
+                                            <div class="rock_post_detail">Những điều cần lưu ý khi cảm nhận khoảng cách giữa các xe cộ trên đường</div>
+                                        </a>
+                                    </li>
+
+                                    <li> <img src="https://asiagenz.com/wp-content/uploads/2023/04/asiagenz-patrick-tomasso-5WUB10XtehU-unsplash-1024x769.jpg" alt="post" />
+                                        <div class="rock_post_detail"> <a target="_blank" href="https://asiagenz.com/saigon-night-drive-dem-xe-cung-ban-be/">Saigon
+                                                Night Drive – Đêm xe cùng bạn bè!
+                                            </a>
+                                            <p><span class="label label-default">April 2023</span></p>
+                                        </div>
+                                    </li>
+                                    <li> <img src="https://asiagenz.com/wp-content/uploads/2023/05/asiagenz-rodrigo-dos-reis-Jpqj4r3RMOM-unsplash.jpg" alt="post" />
+                                        <div class="rock_post_detail"> <a target="_blank" href="https://asiagenz.com/nhung-dieu-can-luu-y-khi-cam-nhan-khoang-cach-giua-cac-xe-co-tren-duong/">Những
+                                                điều cần lưu ý khi cảm nhận khoảng cách giữa các xe cộ trên đường
+                                            </a>
+                                            <p><span class="label label-default">April 2023</span></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="rock_twitter_feed">
+                                <h3>5 điều Bác dặn</h3>
+                                <ul>
+                                    <li> <i class="fa fa-twitter"></i>
+                                        <div class="rock_feed"> <a href="#">Trước khi đi nhớ xin Mẹ-Vợ-Bạn gái-Em gái mưa (nếu có).</a>
+                                        </div>
+                                    </li>
+                                    <li> <i class="fa fa-twitter"></i>
+                                        <div class="rock_feed"> <a href="#">Ra đường phải mang theo Bác và giấy tờ xe, cá nhân đầy đủ.
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li> <i class="fa fa-twitter"></i>
+                                        <div class="rock_feed"> <a href="#">Đeo thắt lưng an toàn trước khi lái xe.</a></div>
+                                    </li>
+                                    <li> <i class="fa fa-twitter"></i>
+                                        <div class="rock_feed"> <a href="#">Giữ khoảng cách an toàn với các phương tiện khác trên đường.</a></div>
+                                    </li>
+                                    <li> <i class="fa fa-twitter"></i>
+                                        <div class="rock_feed"> <a href="#">Luôn tuân thủ tốc độ giới hạn và đặc biệt là trong khu vực trường học, khu dân cư đông đúc.</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rock_copyright">
+                <div class="rock_copyright_bg">
+                    <section class="main">
+                        <div id="ri-grid2" class="ri-grid ri-grid-size-3">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/1.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/2.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/3.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/4.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/5.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/6.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/7.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/8.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/9.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/10.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/11.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/12.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/13.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/14.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/15.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/16.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/17.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/18.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/19.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/20.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/21.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/22.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/23.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/24.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/25.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/26.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/27.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/28.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/29.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/30.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/31.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/32.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/33.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/34.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/35.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/36.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/37.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/38.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/39.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/40.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/41.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/42.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/43.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/44.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/45.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/46.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/47.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/48.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/49.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/50.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/51.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/52.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/53.jpg" alt="" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><img src="assets/images/medium/54.jpg" alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="rock_copyright_div">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-12 col-sm-12">
+                                <p>Thông điệp của chúng tôi<br />
+                                    <small>#saigon #car #nightdrive #passion #speed #civilization #culture #lifestyle #experience #levelup #knowledge #creativegenerativeAI #AI #upgrade #connect #share #charity</small></p>
+                            </div>
+                            <div class="col-lg-3 col-md-12 col-sm-12">
+                                <div class="rock_social">
+                                    <ul>
+                                        <li><img style="max-width: 150px;" src="assets/images/qr-succ-mess.png" /></li>
+                                        <!-- <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li> -->
+                                        <!-- <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="javascript:void(0);"><i class="fa fa-skype"></i></a></li>
+                                        <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="javascript:void(0);"><i class="fa fa-pinterest"></i></a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-lg-offset-0 col-md-offset-2 col-sm-offset-0">
+                                <p>Copyright @2023 Night Drive Saigon.<br />All right reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--footer end-->
+        </div>
+    </div>
+
+    <!--main container end-->
+    <!--main javascript start-->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!--slider background javascript-->
+    <script src="assets/js/plugin/ImageGrid/js/modernizr.custom.js"></script>
+    <script src="assets/js/plugin/ImageGrid/js/jquery.gridrotator.js"></script>
+    <script src="assets/js/plugin/owl-carousel/owl.carousel.min.js"></script>
+
+
+    <!--player-->
+    <script src="assets/js/plugin/player/js/mediaelement-and-player.min.js"></script>
+    <script src="assets/js/plugin/easing/jquery.easing.1.3.js"></script>
+    <script src="assets/js/plugin/bxslider/jquery.bxslider.js"></script>
+    <script src="assets/js/plugin/fancybox/jquery.fancybox.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <!--datetime picker-->
+    <script src="assets/js/plugin/datetime/jquery.datetimepicker.js"></script>
+    <!--main javascript end-->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8E225KQ2GJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8E225KQ2GJ');
+    </script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'vi',
+                includedLanguages: 'en,ja,zh-TW',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+<!--body end-->
+
+
+
+</html>
